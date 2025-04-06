@@ -22,7 +22,7 @@ class About extends React.Component {
     const one = (
       <p>
         I’m a R&D Engineer at <a href="https://www.quanser.com/">Quanser</a>,
-        building educational bots like robotic manipulators and self-driving vehicles. My work blends 
+        building educational robots like robotic manipulators and self-driving vehicles. My work blends 
         real-time systems, control theory, and intuitive software solutions.
         Previously, I was a DevOps Engineer at <a href="https://www.microsoft.com/">Microsoft</a>,
         working on CI/CD, infrastructure automation, and on-call operations.
