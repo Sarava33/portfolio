@@ -15,7 +15,7 @@ const FractalTree = () => {
     const canvasHeight = 400;
     const extent = 20; // Increased extent to zoom out the tree
     const nGen = 4; // More iterations for detail
-    const multiplicity = 5; // Fixed to 5
+    const multiplicity = 4; // Fixed to 5
     const ratio = 0.7; // Reduced ratio for smaller branches
     let requestId;
 
@@ -23,7 +23,7 @@ const FractalTree = () => {
       ctx.clearRect(0, 0, canvasWidth, canvasHeight);
       ctx.beginPath();
       ctx.strokeStyle = "#FFFFFF";
-      ctx.lineWidth = 2;
+      ctx.lineWidth = 1;
 
       // Adjusted scaling functions for better fitting
       const xScale = (val) => Math.round((canvasWidth / extent) * val + canvasWidth / 2);

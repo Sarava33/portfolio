@@ -42,8 +42,7 @@ class Intro extends React.Component {
           <div className="intro-subtitle">I create stuff sometimes.</div>
           <div className="intro-desc">
             I'm an engineer who makes robots move, code run, and occasionally break things in 
-            the name of innovation. I love finding new ways to make technology do 
-            cool (and sometimes unexpected) things. 
+            the name of innovation. I like making tech do surprisingly cool things. 
           </div>
           <a
             href="mailto:mohitsara@gmail.com"

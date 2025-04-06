@@ -4,13 +4,17 @@ import NavigationBar from './components/navbar';
 import './App.css';
 import './styles/global.css';
 import Intro from "./components/intro";
+import About from "./components/about";
 
 
 function App() {
   return (
     <div className="App">
       <NavigationBar />
-      <Intro />
+      <div id="content">
+        <Intro />
+        <About />
+      </div> 
     </div>
   );
 }

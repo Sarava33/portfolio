@@ -1,0 +1,118 @@
+#about {
+    min-height: 50vh;
+    margin: auto;
+    max-width: 1000px;
+    padding-top: 100px;
+  }
+  
+  /* .section-header {
+    margin-bottom: 30px;
+  }
+  
+  .section-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--green-bright);
+    font-family: "Fira Code", monospace;
+  } */
+  
+  .about-content {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .about-description {
+    font-family: "NTR", sans-serif;
+    color: var(--slate);
+    max-width: 600px;
+    font-size: 22px;
+    text-align: justify;
+    margin: 0;
+  }
+  
+  .about-description a,
+  .about-description b {
+    font-size: 21px;
+    font-weight: bold;
+    color: var(--green-bright);
+    text-decoration: none;
+  }
+  
+  .about-description a:hover {
+    text-decoration: underline;
+  }
+  
+  .about-description ul {
+    padding-top: 20px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 10px));
+    padding-left: 0;
+  }
+  
+  .about-description li {
+    position: relative;
+    padding-left: 20px;
+    font-size: 18px;
+    color: var(--slate);
+    margin-bottom: 8px;
+  }
+  
+  .about-description li::before {
+    content: "▹    ";
+    color: var(--green-bright);
+    position: absolute;
+    left: 0;
+  }
+  
+  .about-image {
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-image img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 30px;
+    box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
+    border: none;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .about-image:hover img {
+    transform: translate(-7px, -7px);
+  }
+  
+  /* Responsive styling */
+  @media only screen and (max-width: 788px) {
+    .about-image img {
+      max-width: 200px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #about {
+      height: unset;
+      padding: 30% 20px 0 20px;
+    }
+  
+    .about-content {
+      display: block;
+    }
+  
+    .about-description {
+      font-size: 18px;
+    }
+  
+    .about-description a,
+    .about-description b {
+      font-size: 17px;
+    }
+  
+    .about-image img {
+      display: none;
+    }
+  }
+  
