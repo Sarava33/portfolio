@@ -9,6 +9,7 @@ import Intro from "./components/intro";
 import About from "./components/about";
 import Experience from "./components/experience";
 import Projects from "./components/projects";
+import Credits from "./components/credits";
 
 const theme = createTheme();
 
@@ -23,6 +24,7 @@ function App() {
           <About />
           <Experience />
           <Projects />
+          <Credits />
         </div>
       </div>
     </ThemeProvider>
