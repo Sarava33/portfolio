@@ -90,7 +90,7 @@ const JobList = () => {
       jobTitle: "R&D Engineer @",
       duration: "JUL 2024 - PRESENT",
       desc: [
-        "Developed multiple Python and MATLAB libraries for a robotic arm used for teaching visual servoing and kinematics, with 500+ global downloads and adoption in 10+ universities.",
+        "Developed multiple Python and MATLAB libraries for a robotic arm used for teaching visual servoing and kinematics, with 2500+ global downloads and adoption in 10+ universities.",
         "Built an internal validation system for a self-driving car that reduced product configuration time byby 75% and accelerated the assembly of 50+ products quarterly.",
         "Implemented a cross-platform software installer to streamline product updates, downloads, environment setup, and provide a user interface for product configuration."
       ]
@@ -142,15 +142,22 @@ const JobList = () => {
     <div className={classes.root}>
       <Tabs
         orientation={!isHorizontal ? "vertical" : null}
-        variant={isHorizontal ? "fullWidth" : "scrollable"}
+        variant={isHorizontal ? "scrollable" : "scrollable"}
+        scrollButtons={isHorizontal ? "auto" : false}
+        allowScrollButtonsMobile
         value={value}
         onChange={handleChange}
         className={classes.tabs}
         TabIndicatorProps={{
-          style: {
-            backgroundColor: 'var(--green-bright)',
-            width: '2px' // optional: control thickness
-          }
+          style: isHorizontal
+      ? {
+          backgroundColor: 'var(--green-bright)',
+          height: '2px' // horizontal underline
+        }
+      : {
+          backgroundColor: 'var(--green-bright)',
+          width: '2px' // vertical side-line
+        }
         }}
       >
         {Object.keys(experienceItems).map((key, i) => (

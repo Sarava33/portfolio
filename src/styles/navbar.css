@@ -1,43 +1,56 @@
 .navbar {
-    background-color: var(--navy) !important;
-    color: var(--lightest-slate) !important;
-    font-family: 'NTR', sans-serif !important;
-    font-weight: bold !important;
-    padding: 0.8rem 1rem !important;
-  }
-  
-  .navbar-brand {
-    color: var(--lightest-slate) !important;
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
-  
-  .navbar-nav {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .nav-link {
-    color: var(--lightest-slate) !important;
-    text-decoration: none;
-  }
-  
-  .nav-link:hover {
-    color: var(--green-bright) !important;
-  }
-  
-  .nav-icons {
-    display: flex;
-    gap: 1rem;
+  background-color: var(--navy) !important;
+  color: var(--lightest-slate) !important;
+  font-family: 'NTR', sans-serif !important;
+  font-weight: bold !important;
+  padding: 0.8rem 1rem !important;
+}
+
+.navbar-brand {
+  color: var(--lightest-slate) !important;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: var(--lightest-slate) !important;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--green-bright) !important;
+}
+
+.social-icons,
+.desktop-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Hide mobile-only icons on desktop */
+.mobile-only {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-brand,
+  .nav-links,
+  .desktop-icons {
+    display: none !important;
   }
 
-  
-  @media only screen and (max-width: 600px) {
-    .navbar-brand {
-      display: none;
-    }
-    .navbar-nav {
-      display: none;
-    }
+  .mobile-only {
+    display: flex;
+    justify-content: right;
+    width: 100%;
   }
-  
+
+  .navbar-toggler {
+    display: none !important;
+  }
+}
