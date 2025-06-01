@@ -6,27 +6,26 @@ export default function FadeInSection(props) {
   const domRef = React.useRef();
 
   React.useEffect(() => {
-    // Create the intersection observer
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          setVisible(true); // Set visible when element intersects
+          setVisible(true);
         }
       });
     });
 
-    // Ensure the element exists before observing
-    if (domRef.current) {
-      observer.observe(domRef.current);
+    const current = domRef.current; 
+
+    if (current) {
+      observer.observe(current);
     }
 
-    // Cleanup function to unobserve the element when the component is unmounted
     return () => {
-      if (domRef.current) {
-        observer.unobserve(domRef.current);
+      if (current) {
+        observer.unobserve(current);
       }
     };
-  }, []); // Empty dependency array ensures it only runs once
+  }, []);
 
   return (
     <div
