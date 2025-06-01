@@ -9,7 +9,7 @@ const FractalTree = () => {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    const dpr = window.devicePixelRatio || 1;
+    //const dpr = window.devicePixelRatio || 1;
     const ctx = canvas.getContext("2d");
     const canvasWidth = 400; // Adjusted for better aspect ratio
     const canvasHeight = 400;

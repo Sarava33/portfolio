@@ -7,7 +7,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import DescriptionIcon from '@mui/icons-material/Description';
 import "../styles/navbar.css";
-import Logo from './logo';
+//import Logo from './logo';
 
 const NavigationBar = () => {
   return (
