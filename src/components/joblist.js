@@ -91,7 +91,7 @@ const JobList = () => {
       duration: "JUL 2024 - PRESENT",
       desc: [
         "Developed multiple Python and MATLAB libraries for a robotic arm used for teaching visual servoing and kinematics, with 2500+ global downloads and adoption in 10+ universities.",
-        "Built an internal validation system for a self-driving car that reduced product configuration time byby 75% and accelerated the assembly of 50+ products quarterly.",
+        "Built an internal validation system for a self-driving car that reduced product configuration time by 75% and accelerated the assembly of 50+ products quarterly.",
         "Implemented a cross-platform software installer to streamline product updates, downloads, environment setup, and provide a user interface for product configuration."
       ]
     },
